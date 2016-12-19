@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Revelance HTML Template Documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Revelance - Responsive Onepage Parallax Template">
+        <meta name="author" content="ab-themes">
+    
+        <!-- loading the css -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+        <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+        
+        <style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+        
+        section {padding: 60px 0 0 0;}
+        </style>ae
+        
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    
+        <!-- Various Icons (Favicon, Touch Icon,... -->
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
+        
+    </head>
+    
+    
+        
+    <body data-spy="scroll" data-target=".navbar" id="top">
+    
+        <!-- ========================= NAVIGATION BAR >> START ========================= -->
+        <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+                    <a class="brand" href="#overview">Overview</a><!-- TIP: Change this for the name of your file -->
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li><a href="#installing">Put it Online</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#slider">Slider</a></li>
+                            <li><a href="#contactform">Contact Form</a></li>
+                            <li><a href="#grid">Grid Layout</a></li>
+                            <li><a href="#classes">Helper Classes</a></li>
+                            <li><a href="#seo">SEO</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ========================= NAVIGATION BAR >> END ========================= -->
+    
+    
+    
+        <!-- ========================= MAIN CONTAINER >> START ========================= -->
+        <div class="container">
+        
+            <!-- ========================= SECTION: OVERVIEW >> START ========================= -->
+            <section id="overview">
+                <div class="hero-unit">
+                    <h1>Revelance HTML Template Docs</h1>
+                    <p>Revelance is Premium Enterprise HTML5 template, fully responsive and loaded with bunch of elements to choose from.</p>
+                    <p class="well well-small">Thank you for purchasing my template. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/ab-themes?ref=ab-themes">here</a>. Thanks so much!</p>
+                    <div class="row-fluid">
+                        <div class="span3"><a href="http://themeforest.net/user/ab-themes?ref=ab-themes" class="btn btn-primary btn-large btn-block">Author Profile</a></div>
+                        <div class="span3"><a href="http://ab-themes.com/revelanceHTML" class="btn btn-inverse btn-large btn-block">Template Demo</a></div>
+                        <div class="span3"><a href="#changelog" role="button" class="btn btn-success btn-large btn-block" data-toggle="modal">Changelog</a></div>
+                        <div class="span3"><a href="#credits" role="button" class="btn btn-info btn-large btn-block" data-toggle="modal">CC Credits</a></div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row-fluid theme-meta">
+                    <div class="span3">
+                        Author: ab-themes<br>
+                        Contact: <a href="mailto:support@ab-themes.com">support@ab-themes.com</a>
+                    </div>
+                    <div class="span3">
+                        Author Site: <a href="http://www.ab-themes.com">www.ab-themes.com</a><br>
+                        Demo URL: <br><a href="http://ab-themes.com/revelanceHTML">www.ab-themes.com/revelanceHTML</a>
+                    </div>
+                    <div class="span3">
+                        Current Template Version: 1.0<br>
+                        Documentation Version 1.0
+                    </div>
+                    <div class="span3">
+                        Docs Created: 2013-02-01<br>
+                        Docs Modified: 2013-02-01
+                    </div>
+                </div>
+                <hr>
+            </section>
+            <!-- ========================= SECTION: OVERVIEW >> END ========================= -->
+
+
+           
+            
+
+            
+            <!-- ========================= SECTION: Installing >> START ========================= -->
+            <section id="installing">
+                <div class="page-header">
+                    <h1>Put it Online</h1>
+                </div>
+                <p>
+                    After you’ve downloaded the template you’ll probably want to edit the files in order to put you own texts and images into the theme. You will need HTML/CSS skills to do this and a HTML editor like Dreamwaver, Sublime Text, Notepad++, BlueGriffon, KompoZer or Bluefish Editor.
+                </p>
+                <p>
+                    Assuming you already have your domain and hosting :) you will have to use FTP client software like <a href="https://filezilla-project.org/download.php">FilleZilla</a> to upload files to your server in public_html directory.
+                </p>
+                <p>
+                    Now you can access your new website using web address in web browser like Internet Explorer, Chrome, Firefox or Safari.
+                </p>
+            </section>
+            <!-- ========================= SECTION: Installing >> END ========================= -->
+
+
+           
+            
+
+
+
+
+           
+            
+           
+            
+
+
+            <!-- ========================= SECTION: menu >> START ========================= -->
+            <section id="menu">
+                <div class="page-header">
+                    <h1>Menu <small> structure and styling</small></h1>
+                </div>
+                <p>
+                    Revelance uses <a href="http://users.tpg.com.au/j_birch/plugins/superfish/">Superfish – jQuery menu plugin</a> for main menu dropdowns. HTML markup is classic unordered list ( with id <code>main_menu</code> ) with nested child lists for dropdowns.<br>Optional class is <code>current-menu-ancestor</code> on 1st level for highlighting currently open menu item or its ancestor in main level. Also <code>has_children</code> class on any item that has childern items.
+                </p>
+                <pre class="prettyprint linenums">
+&lt;ul id=&quot;main_menu&quot;&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;index.html&quot;&gt;First level&lt;/a&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Second level&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Second level&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Second level&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;page.html&quot; class=&quot;scroll&quot;&gt;First level&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;page.html&quot; class=&quot;scroll&quot;&gt;First level&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;page.html&quot; class=&quot;scroll&quot;&gt;First level&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;First level&lt;/a&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Second level&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Second level&lt;/a&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Third level&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Third level&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Third level&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Third level&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Second level&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Second level&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Second level&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;page.html&quot; class=&quot;scroll&quot;&gt;First level&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+            <p>
+                Menu on Homepage uses additional classes to enable scroll to section effect. It uses class <code>scroll</code> on menu item and section id as a href attribute. 
+                Also main level menu item can have <code>current-menu-ancestor</code> class and current page <code>current-menu-item</code>. Here is example for menu on homepage:
+            </p>
+                <pre>
+&lt;ul id=&quot;main_menu&quot;&gt;
+    &lt;li&gt;
+        &lt;a class=&quot;current-menu-ancestor&quot; href=&quot;index.html&quot;&gt;First level&lt;/a&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a <mark>class=&quot;current-menu-item&quot; href=&quot;page.html&quot;</mark>&gt;Second level&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Second level&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Second level&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a <mark>href=&quot;#about&quot; class=&quot;scroll&quot;</mark>&gt;First level&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;page.html&quot; class=&quot;scroll&quot;&gt;First level&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;page.html&quot; class=&quot;scroll&quot;&gt;First level&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;First level&lt;/a&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Second level&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Second level&lt;/a&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Third level&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Third level&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Third level&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Third level&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Second level&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Second level&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;page.html&quot;&gt;Second level&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;page.html&quot; class=&quot;scroll&quot;&gt;First level&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+            <p>
+                Then sections must be defined with same id attribute as in menu and with class <code>dnd_section_dd</code>
+            </p>
+            <pre>
+&lt;section <mark>id=&quot;about&quot;</mark> class=&quot;dnd_section_dd&quot;&gt;
+...
+&lt;/section&gt;
+            </pre>
+			
+            </section>
+            <!-- ========================= SECTION: menu >> END ========================= -->
+
+
+           
+            
+
+
+
+            <!-- ========================= SECTION: slider >> START ========================= -->
+            <section id="slider">
+                <div class="page-header">
+                    <h1>Slider</h1>
+                </div>
+                <p>
+                    Revelance comes with great premium Revolution Slider by ThemePunch.
+                </p>
+                <p>
+                    For slider documentation <a href="sliderrevolution/documentation.html">click here</a>!
+                </p>
+            </section>
+            <!-- ========================= SECTION: slider >> END ========================= -->
+
+
+
+
+
+            <!-- ========================= SECTION: contact >> START ========================= -->
+            <section id="contactform">
+                <div class="page-header">
+                    <h1>Contact Form</h1>
+                </div>
+                <p>Here is explanation of how to make a contact form.</p>
+                <p>The only things you need to change are in  /php/sendmail.php file which handles input and sends mail.<br>
+                Replace yellow fields with your data and put your password on line 38.</p>
+                <p>These are default settings for Gmail, if you use the mail services of another provider, maybe you will need to change SMTPSecure ( line 34 ) and Port ( line 36 ). </p>
+                <pre class="prettyprint linenums">
+                  
+                    $message_array = array();
+                    if(empty($_POST[&#39;name&#39;])) $message_array[] = &#39;Name&#39;;
+                    if(empty($_POST[&#39;email&#39;]) || !filter_var($_POST[&#39;email&#39;], FILTER_VALIDATE_EMAIL)) $message_array[] = &#39;Valid Email&#39;;
+                    if(empty($_POST[&#39;subject&#39;])) $message_array[] = &#39;Subject&#39;;
+                    if(empty($_POST[&#39;message&#39;])) $message_array[] = &#39;Message&#39;;
+                    $body = &#39;Name: &#39;.$_POST[&#39;name&#39;].&#39;&#39;;
+                    $body .= &#39;Email: &#39;.$_POST[&#39;email&#39;].&#39;&#39;;
+                    $body .= &#39;Subject: &#39;.$_POST[&#39;subject&#39;].&#39;&#39;;
+                    $body .= &#39;Message: &#39;.$_POST[&#39;message&#39;].&#39;&#39;;
+                    if(sizeof($message_array)==1){
+                        $message = $message_array[0].&#39; is required field.&#39;;
+                    }
+                    elseif(sizeof($message_array)>1){
+                        $message = join(&#39; and &#39;, array_filter(array_merge(array(join(&#39;, &#39;, array_slice($message_array, 0, -1))), array_slice($message_array, -1)))). &#39; are required fields.&#39;;
+                    }
+                    else{
+                        $message = &#39;&#39;;
+                    }
+
+
+                    if($message==&#39;&#39; && (isset($_POST[&#39;action&#39;]) && $_POST[&#39;action&#39;]==&#39;js&#39;)){
+                        require_once(&#39;class.phpmailer.php&#39;);
+                        include(&quot;class.smtp.php&quot;);
+
+                        $mail = new PHPMailer();
+
+
+                        //settings here
+                        //it is prepaid for Gmail, just enter your data
+                        $mail->IsSMTP();                                    // telling the class to use SMTP
+                        $mail->SMTPDebug  = 0;                              // enables SMTP debug information (for testing)
+                        $mail->SMTPAuth   = true;                           // enable SMTP authentication
+                        $mail->SMTPSecure = &quot;tls&quot;;                          // sets the prefix to the server
+                        $mail->Host       = &quot;<mark>smtp.example.com</mark>&quot;;             // sets GMAIL as the SMTP server
+                        $mail->Port       = 587;                            // set the SMTP port for the GMAIL server
+                        $mail->Username   = &quot;<mark>user@example.com</mark>&quot;;             // GMAIL username
+                        $mail->Password   = &quot;&quot;;                             // GMAIL password
+                        $mail->SetFrom(&quot;<mark>from@example.com</mark>&quot;, &quot;Mailer&quot;);       // set from email address
+                        $mail->AddAddress(&quot;<mark>joe@example.net</mark>&quot;, &quot;Joe User&quot;);   // set destination address
+                        $mail->Subject = &quot;Question via Contact Form&quot;;       // set subject of email
+
+                        $mail->MsgHTML($body);
+
+                        if(!$mail->Send()) {
+                          // echo &quot;Mailer Error: &quot; . $mail->ErrorInfo;
+                          echo &quot;Error while sending message...&quot;;
+                        } else {
+                          echo &quot;OK&quot;;
+                        }
+                    }
+                    else{
+                        echo $message;
+                    }
+
+                </pre>
+                <p>This link can be helpful ( <a href="https://www.digitalocean.com/community/tutorials/how-to-use-google-s-smtp-server">click here</a> ).</p>
+            </section>
+            <!-- ========================= SECTION: contact >> END ========================= -->
+
+
+
+
+            <!-- ========================= SECTION: grid >> START ========================= -->
+            <section id="grid">
+                <div class="page-header">
+                    <h1>Grid Layout <small>and container</small></h1>
+                </div>
+                <p>
+                    The grid system utilizes 12 columns, making for a 1170px wide container.<br>
+                    For a simple two column layout, create a <code>.row</code> and add the appropriate number of <code>.span*</code> columns. As this is a 12-column grid, each <code>.span*</code> spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent).
+                </p>
+                <pre class="prettyprint linenums">
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;span4&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;span8&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;</pre>
+                <p>
+                    Given this example, we have <code>.span4</code> and <code>.span8</code>, making for 12 total columns and a complete row.
+                </p>
+                <p>
+                    Use class <code>container</code> to wrap some content with responsive centered container of 1170px width.
+                </p>
+                <pre>
+&lt;section id=&quot;about_us&quot; class=&quot;dm_section_DD&quot;&gt;
+    &lt;div <mark>class=&quot;container&quot;</mark>&gt;
+        ... content here ...
+    &lt;/div&gt;
+&lt;/section&gt;
+                </pre>
+            </section>
+            <!-- ========================= SECTION: grid >> END ========================= -->
+
+
+           
+            
+
+
+           
+
+
+
+
+            <!-- ========================= SECTION: classes >> START ========================= -->
+            <section id="classes">
+                <div class="page-header">
+                    <h1>Classes <small> for styling and customization</small></h1>
+                </div>
+                <p>
+                    There are some classes you can use to style template as you like.
+                </p>
+                <table class="table table-striped">
+                    <tr><th>Class name</th><th>Usage</th></tr>
+                    <tr><td>strong</td><td>on any text elemnt to make it bold</td></tr>
+                    <tr><td>underlined</td><td>on any text element to underline it</td></tr>
+                    <tr><td>italic</td><td>on any text element to make it italic</td></tr>
+                    <tr><td>highlighted</td><td>on nay text element to highlight it</td></tr>
+                    <tr><td>alignleft</td><td>float element left and add margin, useful for image or blockquote</td></tr>
+                    <tr><td>alignright</td><td>float element right and add margin, useful for image or blockquote</td></tr>
+                    <tr><td>color_highlight</td><td>on any text element to set text color to main theme color</td></tr>
+                    <tr><td>section_color_background</td><td>on section to add background to it</td></tr>
+                    <tr><td>leading_line</td><td>on titles to add styled dash between title and content</td></tr>
+                    <tr><td>left_aligned</td><td>on any element to align its text left</td></tr>
+                    <tr><td>right_aligned</td><td>on any element to align its text right</td></tr>
+                    <tr><td>center_aligned</td><td>on any element to align its text center</td></tr>
+                    <tr><td>margin_bottom</td><td>on any block element to add 40px bottom margin</td></tr>
+                    <tr><td>spacer_30</td><td>used on clearing divs to add 30px space in height</td></tr>
+                    <tr><td>spacer_60</td><td>used on clearing divs to add 60px space in height</td></tr>
+                    <tr><td>no_margin</td><td>on any element to remove margins</td></tr>
+                    <tr><td>no_padding</td><td>on any element to remove paddings</td></tr>
+                    <tr><td>left</td><td>on any element to float it left</td></tr>
+                    <tr><td>right</td><td>on any element to float it right</td></tr>
+                    <tr><td>clearfix</td><td>on any element to self-clean floatings</td></tr>
+                </table>
+            </section>
+            <!-- ========================= SECTION: classes >> END ========================= -->
+           
+
+
+
+
+            <!-- ========================= SECTION: seo >> START ========================= -->
+            <section id="seo">
+                <div class="page-header">
+                    <h1>SEO <small> Search Engine Optimization</small></h1>
+                </div>
+                <p>
+                    In order to improve your search engine ranking, and thus enable your web site to appear among search results, please don’t forget to change the description and keywords with your own.
+                </p>
+                <pre class="prettyprint linenums">
+&lt;title&gt;Revelance&lt;/title&gt;
+&lt;meta name=&quot;description&quot; content=&quot;Premium Onepage Theme&quot;&gt;
+&lt;meta name=&quot;keywords&quot; content=&quot;Some keywords that best describes your site&quot;&gt;
+                </pre>
+                <p>
+                    As a best practice, the keywords from the meta tag are words that you should use in the texts from the page.
+                </p>
+            </section>
+            <!-- ========================= SECTION: seo >> END ========================= -->
+
+
+           
+            
+
+
+
+           <br><br>
+            <hr />
+            <br><br>
+    
+            <div class="goodbye">
+                <p>Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this template. No guarantees, but I'll do my best to assist. If you have a more general question relating to the templates on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+            </div>
+        
+            <hr />
+        
+            <footer>
+                <p>&copy; ab-themes 2013</p>
+            </footer>
+            
+        </div>
+        <!-- ========================= MAIN CONTAINER >> END ========================= -->
+         
+        
+        <!-- CHANGELOG >> START -->
+        <div class="modal hide fade" id="changelog" tabindex="-1" role="dialog" aria-labelledby="changelog-label" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="changelog-label">Changelog</h3>
+            </div>
+            <div class="modal-body">
+            <!-- Code Block >> Start -->                   
+            <pre>
+            1.0 - Initial template release</pre>
+            <!-- Code Block >> End -->                   
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+        <!-- CHANGELOG >> END -->
+        
+        
+        
+        <!-- CREDITS >> START -->
+        <div class="modal hide fade" id="credits" tabindex="-1" role="dialog" aria-labelledby="credits-label" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="credits-label">Credits</h3>
+            </div>
+            <div class="modal-body">
+                <p>I've used the following Creative Commons images, icons or other files as listed.</p>
+
+                Icon Set:    <a href="http://www.webhostinghub.com/glyphs/">WebHostingHub Glyphs</a>
+                License:    <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a><br>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+            </div>
+        </div>
+        <!-- CREDITS >> END -->
+
+        <!-- loading javascripts -->
+        <script src="assets/js/jquery.js"></script> 
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/google-code-prettify/prettify.js"></script>
+        
+        <!-- init javascripts -->
+        <script src="assets/js/init.js"></script>
+         
+    </body>
+    
+</html>
